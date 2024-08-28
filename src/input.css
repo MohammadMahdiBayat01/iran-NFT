@@ -1,0 +1,29 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+@font-face {
+    font-family: iransans;
+    src: url('fontweb/eot/IRANSansWeb.eot') format('eot'), url('fontweb/woff2/IRANSansWeb.woff2') format('woff2'), url('fontweb/woff/IRANSansWeb.woff') format('woff');
+}
+@font-face {
+    font-family: iransansbold;
+    src: url('fontweb/eot/IRANSansWeb_Bold.eot') format('eot'), url('fontweb/woff2/IRANSansWeb_Bold.woff2') format('woff2'), url('fontweb/woff/IRANSansWeb_Bold.woff') format('woff');
+}
+@font-face {
+    font-family: iransanslight;
+    src: url('fontweb/eot/IRANSansWeb_Light.eot') format('eot'), url('fontweb/woff2/IRANSansWeb_Light.woff2') format('woff2'), url('fontweb/woff/IRANSansWeb_Light.woff') format('woff');
+}
+* {
+    text-decoration: none;
+    font-family: iransans;
+    box-sizing: border-box;
+}
+a {
+    list-style-type: none;
+    color: #000;
+}
+@layer components {
+    .container {
+        @apply max-w-[90%];
+    }
+}
