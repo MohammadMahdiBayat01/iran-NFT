@@ -9,8 +9,8 @@ variableExist($inPage, true, "http://localhost/tailwindcss/public/Home/index.php
 <!--</div>-->
 
 <nav class="bg-none h-20">
-    <div class="absolute z-0 rounded-full blur-3xl bg-blue-800 -right-96 -top-96 opacity-20" style="width: 900px; height: 900px; "></div>
-    <div class="flex flex-wrap justify-between mx-auto z-10 relativegit">
+    <div class="absolute z-0 rounded-full blur-3xl -right-60 -top-36" style="width: 900px; height: 900px; background: radial-gradient(57.85% 57.85% at 50% 50%, rgba(61, 13, 88, 0.38) 32.38%, rgba(7, 15, 28, 0) 100%);"></div>
+    <div class="flex flex-wrap justify-between mx-auto z-10 relative">
         <a href="#" class="flex items-center rtl:space-x-reverse w-3/12">
             <span class="self-center text-5xl font-semibold whitespace-nowrap text-white">Iran NFT</span>
         </a>

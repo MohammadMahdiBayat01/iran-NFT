@@ -612,20 +612,40 @@ video {
   position: relative;
 }
 
-.right-64 {
-  right: 16rem;
-}
-
-.-right-64 {
-  right: -16rem;
-}
-
 .-right-96 {
   right: -24rem;
 }
 
 .-top-96 {
   top: -24rem;
+}
+
+.-top-9 {
+  top: -2.25rem;
+}
+
+.-top-44 {
+  top: -11rem;
+}
+
+.-top-36 {
+  top: -9rem;
+}
+
+.-right-80 {
+  right: -20rem;
+}
+
+.-right-72 {
+  right: -18rem;
+}
+
+.-right-52 {
+  right: -13rem;
+}
+
+.-right-60 {
+  right: -15rem;
 }
 
 .z-0 {
@@ -865,10 +885,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-30 {
-  opacity: 0.3;
 }
 
 .opacity-20 {
