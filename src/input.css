@@ -13,14 +13,16 @@
     font-family: iransanslight;
     src: url('fontweb/eot/IRANSansWeb_Light.eot') format('eot'), url('fontweb/woff2/IRANSansWeb_Light.woff2') format('woff2'), url('fontweb/woff/IRANSansWeb_Light.woff') format('woff');
 }
+.bold {
+    font-family: iransansbold !important;
+}
+.light {
+    font-family: iransanslight !important;
+}
 * {
     text-decoration: none;
     font-family: iransans;
     box-sizing: border-box;
-}
-a {
-    list-style-type: none;
-    color: #000;
 }
 @layer components {
     .container {
