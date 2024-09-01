@@ -18,7 +18,7 @@ $inPage = true;
 <body class="bg-darkBlue" dir="rtl">
 <div class="container mx-auto mt-10">
     <?php include_once("../layouts/header.php") ?>
-    <div class="flex w-full relative" style="height: 850px">
+    <div class="flex w-full relative" style="height: 650px">
         <div class="h-full w-2/3 mt-60">
             <p class="text-white text-3xl light">بازار جهانی توکن‌های غیرمثلی بر بستر بلاکچین پلیگان</p>
             <p class="text-7xl text-white bold my-16">دنیای NFT های <span class="text-red-600 bold">شگفت انگیز</span></p>
@@ -36,8 +36,48 @@ $inPage = true;
         <div class="h-full w-1/3 flex relative p-12 mt-10">
             <img class="absolute rounded-[70px] rotate-12 w-[421px] h-[547px] z-10" src="../layouts/images/fortniteIMG.jpg">
             <div class="absolute rounded-[70px] w-[411px] h-[526px] border opacity-50 z-0" style="transform: rotate(20deg)"></div>
-            <div class="absolute z-0 rounded-full blur-3xl -right-60 -top-36" style="width: 900px; height: 900px; background: radial-gradient(57.85% 57.85% at 50% 50%, rgba(61, 13, 88, 0.38) 32.38%, rgba(7, 15, 28, 0) 100%);box-shadow: 0px 0px 0px 0px #4B109440;box-shadow: 22px 12px 54px 0px #4B109440;box-shadow: 86px 48px 99px 0px #4B109436;box-shadow: 194px 109px 133px 0px #4B109421;box-shadow: 345px 193px 158px 0px #4B10940A;box-shadow: 538px 301px 173px 0px #4B109400;"></div>
-            <div class="flex absolute bg-white/10 backdrop-blur-sm rounded-2xl top-2/3 p-4 z-20"><span><img src="../layouts/images/+500.png"></span><span class="text-white text-2xl self-center mr-2">+500 هنرمند</span></div>
+            <div class="absolute z-0 rounded-full blur-3xl -right-60 -top-36 w-full" style=" height: 900px; background: radial-gradient(57.85% 57.85% at 50% 50%, rgba(61, 13, 88, 0.38) 32.38%, rgba(7, 15, 28, 0) 100%);box-shadow: 0px 0px 0px 0px #4B109440;box-shadow: 22px 12px 54px 0px #4B109440;box-shadow: 86px 48px 99px 0px #4B109436;box-shadow: 194px 109px 133px 0px #4B109421;box-shadow: 345px 193px 158px 0px #4B10940A;box-shadow: 538px 301px 173px 0px #4B109400;"></div>
+            <div class="flex absolute bg-white/10 backdrop-blur-sm rounded-2xl top-[90%] p-4 z-20"><span><img src="../layouts/images/+500.png"></span><span class="text-white text-2xl self-center mr-2">+500 هنرمند</span></div>
+        </div>
+    </div>
+<!--    first nav    -->
+    <div class="flex mt-32 w-72">
+        <div class="w-1/3"><img src="../layouts/images/Wallet.png"></div>
+        <div class=" w-2/3 self-center mr-4">
+            <p class="text-white text-4xl pb-2">کیف پول</p>
+            <p class="text-white text-2xl light">Wallet</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-6 gap-8 py-10">
+        <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(317deg, #FC280C 8.01%, #07101D 100%, #07101D 100%)">
+            <div class="absolute bg-darkBlue border-t border-t-[#FC280C] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
+            <img class="mx-auto" src="../layouts/images/MetaMask.png" alt="MetaMask">
+            <p class="text-white text-xl opacity-50 text-center mt-6">MetaMask</p>
+        </div>
+        <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #00D1FF 25.82%, #07101D 87.02%);">
+            <div class="absolute bg-darkBlue border-t border-t-[#00D1FF] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
+            <img class="mx-auto" src="../layouts/images/Coinbase.png" alt="Coinbase">
+            <p class="text-white text-xl opacity-50 text-center mt-6">Coinbase</p>
+        </div>
+        <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #760AFF 13.25%, #07101D 87.02%);)">
+            <div class="absolute bg-darkBlue border-t border-t-[#760AFF] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
+            <img class="mx-auto" src="../layouts/images/Exodus.png" alt="Exodus">
+            <p class="text-white text-xl opacity-50 text-center mt-6">Exodus</p>
+        </div>
+        <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #FE007A 25.82%, #07101D 87.02%);">
+            <div class="absolute bg-darkBlue border-t border-t-[#FE007A] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
+            <img class="mx-auto" src="../layouts/images/Uniswap.png" alt="Uniswap">
+            <p class="text-white text-xl opacity-50 text-center mt-6">Uniswap</p>
+        </div>
+        <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #FFBF1C 25.82%, #07101D 87.02%);">
+            <div class="absolute bg-darkBlue border-t border-t-[#FFBF1C] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
+            <img class="mx-auto" src="../layouts/images/Bainance.png" alt="Bainance">
+            <p class="text-white text-xl opacity-50 text-center mt-6">Bainance</p>
+        </div>
+        <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #00D1FF 25.82%, #07101D 87.02%);">
+            <div class="absolute bg-darkBlue border-t border-t-[#00D1FF] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
+            <img class="mx-auto" src="../layouts/images/TrustWallet.png" alt="TrustWallet">
+            <p class="text-white text-xl opacity-50 text-center mt-6">TrustWallet</p>
         </div>
     </div>
     <?php include_once("../layouts/footer.php") ?>
