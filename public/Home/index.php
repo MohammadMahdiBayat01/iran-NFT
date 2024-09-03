@@ -13,6 +13,18 @@ $inPage = true;
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../assets/styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        .liked {
+            color: #ef4444; /* text-red-500 */
+            transform: scale(1.1); /* scale-110 */
+        }
+
+        .liked:hover {
+            color: #b91c1c; /* text-red-700 */
+            transform: scale(1.2); /* scale-120 */
+        }
+    </style>
     <title>Home</title>
 </head>
 <body class="bg-darkBlue" dir="rtl">
@@ -41,9 +53,9 @@ $inPage = true;
         </div>
     </div>
 <!--    first nav    -->
-    <div class="flex mt-32 w-72">
-        <div class="w-1/3"><img src="../layouts/images/Wallet.png"></div>
-        <div class=" w-2/3 self-center mr-4">
+    <div class="flex mt-32 w-96">
+        <div class="w-1/4"><img src="../layouts/images/Wallet.png"></div>
+        <div class=" w-3/4 self-center">
             <p class="text-white text-4xl pb-2">کیف پول</p>
             <p class="text-white text-2xl light">Wallet</p>
         </div>
@@ -80,7 +92,64 @@ $inPage = true;
             <p class="text-white text-xl opacity-50 text-center mt-6">TrustWallet</p>
         </div>
     </div>
+    <!--    second nav    -->
+    <div class="flex mt-32 w-96">
+        <div class="w-1/4"><img src="../layouts/images/HotBids.png"></div>
+        <div class=" w-3/4 self-center">
+            <p class="text-white text-4xl pb-2">پیشنهاد های داغ</p>
+            <p class="text-white text-2xl light">Hot Bids</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 gap-8 mt-10">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <figure class="flex relative justify-center">
+                <div class="flex absolute top-4 justify-center rounded-full bg-white/10 backdrop-blur-sm w-44 h-14 text-2xl text-white"><span class="text-white text-2xl self-center">2h 24m 12s</span></div>
+                <div class="flex absolute top-4 left-0 rounded-full bg-white/10 backdrop-blur-sm w-14 h-14">
+                    <i class="fas fa-heart text-2xl text-white cursor-pointer transition duration-300 self-center mx-auto" onclick="toggleHeartColor(this)"></i>
+                </div>
+                <img src="../layouts/images/DigiBoy.png" alt="DigiBoy">
+            </figure>
+            <figcaption class="block mt-4">
+                <p class="text-4xl text-white bold py-5 text-left">Digi boy</p>
+                <p class="text-3xl text-white light text-left">By Negor</p>
+                <p class="grid grid-cols-2 mt-8"><span class="text-2xl text-white text-right light">آخرین پیشنهاد</span><span class="text-left"><span class="text-2xl text-white light mr-2">ETH</span><sapn class="text-3xl text-white bold">2.28</sapn></span></p>
+                <button class="mt-8 px-14 py-4 text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
+            </figcaption>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <figure class="flex relative justify-center">
+                <div class="flex absolute top-4 justify-center rounded-full bg-white/10 backdrop-blur-sm w-44 h-14 text-2xl text-white"><span class="text-white text-2xl self-center">2h 24m 12s</span></div>
+                <div class="flex absolute top-4 left-0 rounded-full bg-white/10 backdrop-blur-sm w-14 h-14">
+                    <i class="fas fa-heart text-2xl text-white cursor-pointer transition duration-300 self-center mx-auto" onclick="toggleHeartColor(this)"></i>
+                </div>
+                <img src="../layouts/images/AngryApe.png" alt="AngryApe">
+            </figure>
+            <figcaption class="block mt-4">
+                <p class="text-4xl text-white bold py-5 text-left">Angry Ape</p>
+                <p class="text-3xl text-white light text-left">By Farshad</p>
+                <p class="grid grid-cols-2 mt-8"><span class="text-2xl text-white text-right light">آخرین پیشنهاد</span><span class="text-left"><span class="text-2xl text-white light mr-2">ETH</span><sapn class="text-3xl text-white bold">2.28</sapn></span></p>
+                <button class="mt-8 px-14 py-4 text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
+            </figcaption>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <figure class="flex relative justify-center">
+                <div class="flex absolute top-4 justify-center rounded-full bg-white/10 backdrop-blur-sm w-44 h-14 text-2xl text-white"><span class="text-white text-2xl self-center">2h 24m 12s</span></div>
+                <div class="flex absolute top-4 left-0 rounded-full bg-white/10 backdrop-blur-sm w-14 h-14">
+                    <i class="fas fa-heart text-2xl text-white cursor-pointer transition duration-300 self-center mx-auto" onclick="toggleHeartColor(this)"></i>
+                </div>
+                <img src="../layouts/images/Virtualland.png" alt="Virtualland">
+            </figure>
+            <figcaption class="block mt-4">
+                <p class="text-4xl text-white bold py-5 text-left">Virtualland</p>
+                <p class="text-3xl text-white light text-left">By Amirhossein</p>
+                <p class="grid grid-cols-2 mt-8"><span class="text-2xl text-white text-right light">آخرین پیشنهاد</span><span class="text-left"><span class="text-2xl text-white light mr-2">ETH</span><sapn class="text-3xl text-white bold">2.28</sapn></span></p>
+                <button class="mt-8 px-14 py-4 text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
+            </figcaption>
+        </div>
+    </div>
+<!--    <i class="fas fa-heart text-xl cursor-pointer transition duration-300" onclick="toggleHeartColor(this)"></i>-->
     <?php include_once("../layouts/footer.php") ?>
 </div>
+<script src="../../assets/scripts/Home.js"></script>
 </body>
 </html>
