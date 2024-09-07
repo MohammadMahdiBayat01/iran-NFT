@@ -168,8 +168,8 @@ $inPage = true;
     <div class="flex mt-32 w-96">
         <div class="w-1/4"><img src="../layouts/images/HotBids.png"></div>
         <div class=" w-3/4 self-center">
-            <p class="text-white text-4xl pb-2">پیشنهاد های داغ</p>
-            <p class="text-white text-2xl light">Hot Bids</p>
+            <p class="text-white text-4xl pb-2">پر بازدیدترین ها</p>
+            <p class="text-white text-2xl light">Trends</p>
         </div>
     </div>
     <div class="grid grid-cols-3 gap-x-10 mt-80">
@@ -199,8 +199,8 @@ $inPage = true;
     <div class="flex mt-32 w-96">
         <div class="w-1/4"><img src="../layouts/images/HotBids.png"></div>
         <div class=" w-3/4 self-center">
-            <p class="text-white text-4xl pb-2">پیشنهاد های داغ</p>
-            <p class="text-white text-2xl light">Hot Bids</p>
+            <p class="text-white text-4xl pb-2">هنرمندان برتر</p>
+            <p class="text-white text-2xl light">Top Creators</p>
         </div>
     </div>
     <div class="grid grid-cols-3 gap-x-5 gap-y-10 mt-10">
@@ -319,8 +319,20 @@ $inPage = true;
             </div>
         </div>
     </div>
-    <?php include_once("../layouts/footer.php") ?>
+    <div class="border border-white/30 mt-20 rounded-3xl" style="background: linear-gradient(90deg, #A50E86 0.16%, #C10B70 24.02%, #E83947 38.73%, #DF330D 55.88%, #C55212 81.05%, #D37506 100%);">
+        <p class="mt-16 text-white text-4xl bold text-center">عضویت در خبرنامه</p>
+        <p class="mt-8 text-white text-xl light text-center">به جامعه Art Token بپیوندید تا در جریان آخرین اخبار، ویژگی‌ها و نکات مربوط به این بازار قرار بگیرید.</p>
+        <form>
+            <div class="flex max-w-[36rem] h-16 mx-auto mt-16 mb-14">
+                <div class="relative w-full">
+                    <input type="search" id="search-dropdown" class="block p-2.5 pr-4 w-full h-full z-20 text-xl text-gray-900 bg-white rounded-3xl" placeholder="ایمیل خود را وارد کنید" required />
+                    <button type="submit" class="absolute top-0 end-0 p-2.5 w-36 h-full bg-black rounded-l-3xl text-center text-white text-2xl bold">ارسال</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
+<?php include_once("../layouts/footer.php") ?>
 <script src="../../assets/scripts/Home.js"></script>
 </body>
 </html>
