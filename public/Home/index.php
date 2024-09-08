@@ -13,6 +13,7 @@ $inPage = true;
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../assets/styles/Home.css">
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
         .liked {
@@ -27,111 +28,113 @@ $inPage = true;
     </style>
     <title>Home</title>
 </head>
-<body class="bg-darkBlue" dir="rtl">
+<body class="bg-darkBlue overflow-x-hidden" dir="rtl">
 <div class="container mx-auto mt-10">
     <?php include_once("../layouts/header.php") ?>
-    <div class="flex w-full relative" style="height: 650px">
-        <div class="h-full w-2/3 mt-60">
-            <p class="text-white text-3xl light">بازار جهانی توکن‌های غیرمثلی بر بستر بلاکچین پلیگان</p>
-            <p class="text-7xl text-white bold my-16">دنیای NFT های <span class="text-red-600 bold">شگفت انگیز</span></p>
-            <p class="text-2xl text-white opacity-50 pl-32"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-            <div class="flex h-20 mt-14">
-                <div class="flex w-5/12">
+    <div class="flex flex-col lg:flex-wrap-reverse lg:flex-row w-full h-[60rem] lg:h-auto relative">
+        <div class="w-full lg:w-2/3 mt-20 lg:mt-60 lg:order-1">
+            <p class="text-white text-center lg:text-right text-sm lg:text-3xl light">بازار جهانی توکن‌های غیرمثلی بر بستر بلاکچین پلیگان</p>
+            <p class="text-white text-center lg:text-right text-3xl lg:text-7xl bold my-6 lg:my-16">دنیای NFT های <span class="text-orange-light bold">شگفت انگیز</span></p>
+        </div>
+        <div class="w-full h-full lg:h-auto lg:w-1/3 flex relative lg:p-12 mt-10 justify-center lg:order-3">
+            <img class="absolute rounded-[70px] rotate-12 w-[321px] lg:w-[421px] h-[447px] lg:h-[547px] z-10" src="../layouts/images/fortniteIMG.jpg">
+            <div class="absolute rounded-[70px] w-[311px] lg:w-[411px] h-[426px] lg:h-[526px] border opacity-50 z-0" style="transform: rotate(20deg)"></div>
+            <div class="absolute h-[200px] lg:h-[900px] z-0 rounded-full blur-3xl -right-60 -top-36 w-full" style=" background: radial-gradient(57.85% 57.85% at 50% 50%, rgba(61, 13, 88, 0.38) 32.38%, rgba(7, 15, 28, 0) 100%);box-shadow: 0px 0px 0px 0px #4B109440;box-shadow: 22px 12px 54px 0px #4B109440;box-shadow: 86px 48px 99px 0px #4B109436;box-shadow: 194px 109px 133px 0px #4B109421;box-shadow: 345px 193px 158px 0px #4B10940A;box-shadow: 538px 301px 173px 0px #4B109400;"></div>
+            <div class="flex absolute bg-white/10 backdrop-blur-sm rounded-2xl bottom-10 lg:-bottom-1/4 right-0 p-4 z-20"><span><img class="w-16 lg:w-auto h-6 lg:h-auto" src="../layouts/images/+500.png"></span><span class="text-white text-lg lg:text-2xl self-center mr-2">+500 هنرمند</span></div>
+        </div>
+        <div class="w-full lg:w-2/3">
+            <p class="block text-center lg:text-right text-xl lg:text-2xl text-white opacity-50 lg:pl-32"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+            <div class="flex h-16 lg:h-20 mt-6 lg:mt-14">
+                <div class="hidden lg:flex w-5/12">
                     <div class="relative w-full">
                         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M14.3332 28.0001C6.79984 28.0001 0.666504 21.8667 0.666504 14.3334C0.666504 6.80008 6.79984 0.666748 14.3332 0.666748C21.8665 0.666748 27.9998 6.80008 27.9998 14.3334C27.9998 21.8667 21.8665 28.0001 14.3332 28.0001ZM14.3332 2.66675C7.89317 2.66675 2.6665 7.90675 2.6665 14.3334C2.6665 20.7601 7.89317 26.0001 14.3332 26.0001C20.7732 26.0001 25.9998 20.7601 25.9998 14.3334C25.9998 7.90675 20.7732 2.66675 14.3332 2.66675ZM28.3332 29.3347C28.0798 29.3347 27.8265 29.2414 27.6265 29.0414L24.9598 26.3747C24.7739 26.1866 24.6696 25.9327 24.6696 25.6681C24.6696 25.4035 24.7739 25.1496 24.9598 24.9614C25.3465 24.5747 25.9865 24.5747 26.3732 24.9614L29.0398 27.6281C29.4265 28.0147 29.4265 28.6547 29.0398 29.0414C28.8398 29.2414 28.5865 29.3347 28.3332 29.3347Z" fill="white" fill-opacity="0.5"/></svg></div>
                         <input type="text" id="input-group-1" class="bg-transparent border border-red-600 text-gray-900 text-lg rounded-3xl block w-full h-full ps-12 p-2.5" placeholder="جست و جو NFT ها و هنرمندان">
                     </div>
                 </div>
-                <button class="block w-4/12 rounded-3xl text-2xl text-white bold mr-16" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">دریافت مشاوره رایگان</button>
+                <button class="block w-48 lg:w-4/12 text-lg lg:text-2xl text-white bold rounded-3xl mx-auto lg:mr-16" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">دریافت مشاوره رایگان</button>
             </div>
-        </div>
-        <div class="h-full w-1/3 flex relative p-12 mt-10">
-            <img class="absolute rounded-[70px] rotate-12 w-[421px] h-[547px] z-10" src="../layouts/images/fortniteIMG.jpg">
-            <div class="absolute rounded-[70px] w-[411px] h-[526px] border opacity-50 z-0" style="transform: rotate(20deg)"></div>
-            <div class="absolute z-0 rounded-full blur-3xl -right-60 -top-36 w-full" style=" height: 900px; background: radial-gradient(57.85% 57.85% at 50% 50%, rgba(61, 13, 88, 0.38) 32.38%, rgba(7, 15, 28, 0) 100%);box-shadow: 0px 0px 0px 0px #4B109440;box-shadow: 22px 12px 54px 0px #4B109440;box-shadow: 86px 48px 99px 0px #4B109436;box-shadow: 194px 109px 133px 0px #4B109421;box-shadow: 345px 193px 158px 0px #4B10940A;box-shadow: 538px 301px 173px 0px #4B109400;"></div>
-            <div class="flex absolute bg-white/10 backdrop-blur-sm rounded-2xl top-[90%] p-4 z-20"><span><img src="../layouts/images/+500.png"></span><span class="text-white text-2xl self-center mr-2">+500 هنرمند</span></div>
         </div>
     </div>
 <!--    first nav    -->
-    <div class="flex mt-32 w-96">
-        <div class="w-1/4"><img src="../layouts/images/Wallet.png"></div>
-        <div class=" w-3/4 self-center">
-            <p class="text-white text-4xl pb-2">کیف پول</p>
-            <p class="text-white text-2xl light">Wallet</p>
+    <div class="flex mt-14 w-96">
+        <div class="flex w-12 lg:w-20 h-12 lg:h-20 ml-2 justify-center self-center items-center text-lg rounded-full" style="background: linear-gradient(270.13deg, #F44A15 -8.2%, rgba(252, 6, 6, 0.903404) 48.47%, rgba(130, 18, 241, 0.81) 99.55%);"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 lg:w-12 h-6 lg:h-12" viewBox="0 0 48 48" fill="none"><path d="M43.9999 21.9399V26.0599C43.9999 27.1599 43.1199 28.0599 41.9999 28.0999H38.0799C35.92 28.0999 33.9399 26.5199 33.7599 24.3599C33.6399 23.0999 34.1199 21.9199 34.9599 21.0999C35.6999 20.3399 36.7199 19.8999 37.8399 19.8999H41.9999C43.1199 19.9399 43.9999 20.8399 43.9999 21.9399Z" fill="white"/><path d="M40.94 31.1H38.08C34.28 31.1 31.08 28.24 30.76 24.6C30.58 22.52 31.34 20.44 32.86 18.96C34.14 17.64 35.92 16.9 37.84 16.9H40.94C41.52 16.9 42 16.42 41.94 15.84C41.5 10.98 38.28 7.66 33.5 7.1C33.02 7.02 32.52 7 32 7H14C13.44 7 12.9 7.04 12.38 7.12C7.28 7.76 4 11.56 4 17V31C4 36.52 8.48 41 14 41H32C37.6 41 41.46 37.5 41.94 32.16C41.9513 32.023 41.9336 31.8852 41.8881 31.7556C41.8427 31.6259 41.7704 31.5072 41.6761 31.4072C41.5818 31.3073 41.4676 31.2283 41.3407 31.1753C41.2139 31.1224 41.0774 31.0967 40.94 31.1ZM26 19.5H14C13.18 19.5 12.5 18.82 12.5 18C12.5 17.18 13.18 16.5 14 16.5H26C26.82 16.5 27.5 17.18 27.5 18C27.5 18.82 26.82 19.5 26 19.5Z" fill="white"/></svg></div>
+        <div>
+            <p class="text-white text-lg lg:text-4xl pb-2">کیف پول</p>
+            <p class="text-white text-sm lg:text-2xl light">Wallet</p>
         </div>
     </div>
-    <div class="grid grid-cols-6 gap-8 py-10">
+    <div class="grid grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-8 py-10">
         <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(317deg, #FC280C 8.01%, #07101D 100%, #07101D 100%)">
             <div class="absolute bg-darkBlue border-t border-t-[#FC280C] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
-            <img class="mx-auto" src="../layouts/images/MetaMask.png" alt="MetaMask">
-            <p class="text-white text-xl opacity-50 text-center mt-6">MetaMask</p>
+            <img class="w-12 lg:w-24 h-12 lg:h-24 mx-auto" src="../layouts/images/MetaMask.png" alt="MetaMask">
+            <p class="text-white text-lg lg:text-2xl opacity-50 text-center mt-2 lg:mt-6">MetaMask</p>
         </div>
         <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #00D1FF 25.82%, #07101D 87.02%);">
             <div class="absolute bg-darkBlue border-t border-t-[#00D1FF] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
-            <img class="mx-auto" src="../layouts/images/Coinbase.png" alt="Coinbase">
-            <p class="text-white text-xl opacity-50 text-center mt-6">Coinbase</p>
+            <img class="w-12 lg:w-24 h-12 lg:h-24 mx-auto" src="../layouts/images/Coinbase.png" alt="Coinbase">
+            <p class="text-white text-lg lg:text-2xl opacity-50 text-center mt-2 lg:mt-6">Coinbase</p>
         </div>
         <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #760AFF 13.25%, #07101D 87.02%);)">
             <div class="absolute bg-darkBlue border-t border-t-[#760AFF] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
-            <img class="mx-auto" src="../layouts/images/Exodus.png" alt="Exodus">
-            <p class="text-white text-xl opacity-50 text-center mt-6">Exodus</p>
+            <img class="w-12 lg:w-24 h-12 lg:h-24 mx-auto" src="../layouts/images/Exodus.png" alt="Exodus">
+            <p class="text-white text-lg lg:text-2xl opacity-50 text-center mt-2 lg:mt-6">Exodus</p>
         </div>
         <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #FE007A 25.82%, #07101D 87.02%);">
             <div class="absolute bg-darkBlue border-t border-t-[#FE007A] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
-            <img class="mx-auto" src="../layouts/images/Uniswap.png" alt="Uniswap">
-            <p class="text-white text-xl opacity-50 text-center mt-6">Uniswap</p>
+            <img class="w-12 lg:w-24 h-12 lg:h-24 mx-auto" src="../layouts/images/Uniswap.png" alt="Uniswap">
+            <p class="text-white text-lg lg:text-2xl opacity-50 text-center mt-2 lg:mt-6">Uniswap</p>
         </div>
         <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #FFBF1C 25.82%, #07101D 87.02%);">
             <div class="absolute bg-darkBlue border-t border-t-[#FFBF1C] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
-            <img class="mx-auto" src="../layouts/images/Bainance.png" alt="Bainance">
-            <p class="text-white text-xl opacity-50 text-center mt-6">Bainance</p>
+            <img class="w-12 lg:w-24 h-12 lg:h-24 mx-auto" src="../layouts/images/Bainance.png" alt="Bainance">
+            <p class="text-white text-lg lg:text-2xl opacity-50 text-center mt-2 lg:mt-6">Bainance</p>
         </div>
         <div class="block relative border py-8 bg-white/5" style="border-image-slice: 30;border-image-source: linear-gradient(314.69deg, #00D1FF 25.82%, #07101D 87.02%);">
             <div class="absolute bg-darkBlue border-t border-t-[#00D1FF] -bottom-[10px] -right-[19px] -rotate-45 z-10 w-12 h-8 rounded-b-3xl"></div>
-            <img class="mx-auto" src="../layouts/images/TrustWallet.png" alt="TrustWallet">
-            <p class="text-white text-xl opacity-50 text-center mt-6">TrustWallet</p>
+            <img class="w-12 lg:w-24 h-12 lg:h-24 mx-auto" src="../layouts/images/TrustWallet.png" alt="TrustWallet">
+            <p class="text-white text-lg lg:text-2xl opacity-50 text-center mt-2 lg:mt-6">TrustWallet</p>
         </div>
     </div>
     <!--    second nav    -->
-    <div class="flex mt-32 w-96">
-        <div class="w-1/4"><img src="../layouts/images/HotBids.png"></div>
-        <div class=" w-3/4 self-center">
-            <p class="text-white text-4xl pb-2">پیشنهاد های داغ</p>
-            <p class="text-white text-2xl light">Hot Bids</p>
+    <div class="flex mt-14 w-96">
+        <div class="flex w-12 lg:w-20 h-12 lg:h-20 ml-2 justify-center self-center items-center text-lg rounded-full" style="background: linear-gradient(270.13deg, #F44A15 -8.2%, rgba(252, 6, 6, 0.903404) 48.47%, rgba(130, 18, 241, 0.81) 99.55%);"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 lg:w-12 h-6 lg:h-12" viewBox="0 0 48 48" fill="none"><path d="M39.0984 21.9938C38.1884 19.9456 36.8655 18.1073 35.2125 16.5938L33.8484 15.3422C33.8021 15.3009 33.7464 15.2716 33.6861 15.2568C33.6258 15.2421 33.5628 15.2423 33.5026 15.2576C33.4425 15.2729 33.387 15.3027 33.341 15.3444C33.2951 15.3861 33.2601 15.4385 33.2391 15.4969L32.6297 17.2454C32.25 18.3422 31.5516 19.4625 30.5625 20.5641C30.4969 20.6344 30.4219 20.6532 30.3703 20.6579C30.3188 20.6625 30.2391 20.6532 30.1687 20.5875C30.1031 20.5313 30.0703 20.4469 30.075 20.3625C30.2484 17.5407 29.4047 14.3579 27.5578 10.8938C26.0297 8.01567 23.9062 5.77035 21.2531 4.20473L19.3172 3.06567C19.0641 2.91567 18.7406 3.11254 18.7547 3.40785L18.8578 5.65785C18.9281 7.19535 18.75 8.55473 18.3281 9.68442C17.8125 11.0672 17.0719 12.3516 16.125 13.5047C15.466 14.3061 14.7192 15.031 13.8984 15.6657C11.9217 17.1852 10.3144 19.1322 9.19687 21.361C8.08207 23.6092 7.50136 26.0844 7.5 28.5938C7.5 30.8063 7.93594 32.9485 8.79844 34.9688C9.63125 36.9139 10.8331 38.6793 12.3375 40.1672C13.8563 41.6672 15.6188 42.8485 17.5828 43.6688C19.6172 44.5219 21.7734 44.9532 24 44.9532C26.2266 44.9532 28.3828 44.5219 30.4172 43.6735C32.3764 42.858 34.158 41.6686 35.6625 40.1719C37.1812 38.6719 38.3719 36.9188 39.2016 34.9735C40.0628 32.9587 40.5046 30.7896 40.5 28.5985C40.5 26.311 40.0312 24.0891 39.0984 21.9938Z" fill="white"/></svg></div>
+        <div>
+            <p class="text-white text-lg lg:text-4xl pb-2">پیشنهاد های داغ</p>
+            <p class="text-white text-sm lg:text-2xl light">Hot Bids</p>
         </div>
     </div>
-    <div class="grid grid-cols-3 gap-8 mt-10">
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8 mt-10">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2 lg:p-4">
             <figure class="flex relative justify-center">
-                <div class="flex absolute top-4 justify-center rounded-full bg-white/10 backdrop-blur-sm w-44 h-14 text-2xl text-white"><span class="text-white text-2xl self-center">2h 24m 12s</span></div>
-                <div class="flex absolute top-4 left-0 rounded-full bg-white/10 backdrop-blur-sm w-14 h-14">
-                    <i class="fas fa-heart text-2xl text-white cursor-pointer transition duration-300 self-center mx-auto" onclick="toggleHeartColor(this)"></i>
+                <div class="flex absolute top-4 justify-center rounded-full bg-white/10 backdrop-blur-sm w-24 lg:w-44 h-8 lg:h-14 text-white"><span class="text-white text-sm lg:text-2xl self-center">2h 24m 12s</span></div>
+                <div class="flex absolute top-4 left-0 rounded-full bg-white/10 backdrop-blur-sm w-8 lg:w-14 h-8 lg:h-14">
+                    <i class="fas fa-heart text-sm lg:text-2xl text-white cursor-pointer transition duration-300 self-center mx-auto" onclick="toggleHeartColor(this)"></i>
                 </div>
                 <img src="../layouts/images/DigiBoy.png" alt="DigiBoy">
             </figure>
-            <figcaption class="block mt-4">
-                <p class="text-4xl text-white bold py-5 text-left">Digi boy</p>
-                <p class="text-3xl text-white light text-left">By Negor</p>
-                <p class="grid grid-cols-2 mt-8"><span class="text-2xl text-white text-right light">آخرین پیشنهاد</span><span class="text-left"><span class="text-2xl text-white light mr-2">ETH</span><sapn class="text-3xl text-white bold">2.28</sapn></span></p>
-                <button class="mt-8 px-14 py-4 text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
+            <figcaption class="block lg:mt-4">
+                <p class="text-xl lg:text-4xl text-white bold py-2 lg:py-5 text-left">Digi boy</p>
+                <p class="text-lg lg:text-3xl text-white light text-left">By Negor</p>
+                <p class="grid grid-cols-2 mt-2 lg:mt-8"><span class="text-xs lg:text-2xl text-white text-right light">آخرین پیشنهاد</span><span class="text-left"><span class="text-sm lg:text-2xl text-white light mr-2">ETH</span><sapn class="text-lg lg:text-3xl text-white bold">2.28</sapn></span></p>
+                <button class="mt-4 lg:mt-8 w-full lg:w-56  py-4 text-lg lg:text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
             </figcaption>
         </div>
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2 lg:p-4">
             <figure class="flex relative justify-center">
-                <div class="flex absolute top-4 justify-center rounded-full bg-white/10 backdrop-blur-sm w-44 h-14 text-2xl text-white"><span class="text-white text-2xl self-center">2h 24m 12s</span></div>
-                <div class="flex absolute top-4 left-0 rounded-full bg-white/10 backdrop-blur-sm w-14 h-14">
-                    <i class="fas fa-heart text-2xl text-white cursor-pointer transition duration-300 self-center mx-auto" onclick="toggleHeartColor(this)"></i>
+                <div class="flex absolute top-4 justify-center rounded-full bg-white/10 backdrop-blur-sm w-24 lg:w-44 h-8 lg:h-14 text-white"><span class="text-white text-sm lg:text-2xl self-center">2h 24m 12s</span></div>
+                <div class="flex absolute top-4 left-0 rounded-full bg-white/10 backdrop-blur-sm w-8 lg:w-14 h-8 lg:h-14">
+                    <i class="fas fa-heart text-sm lg:text-2xl text-white cursor-pointer transition duration-300 self-center mx-auto" onclick="toggleHeartColor(this)"></i>
                 </div>
                 <img src="../layouts/images/AngryApe.png" alt="AngryApe">
             </figure>
-            <figcaption class="block mt-4">
-                <p class="text-4xl text-white bold py-5 text-left">Angry Ape</p>
-                <p class="text-3xl text-white light text-left">By Farshad</p>
-                <p class="grid grid-cols-2 mt-8"><span class="text-2xl text-white text-right light">آخرین پیشنهاد</span><span class="text-left"><span class="text-2xl text-white light mr-2">ETH</span><sapn class="text-3xl text-white bold">2.28</sapn></span></p>
-                <button class="mt-8 px-14 py-4 text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
+            <figcaption class="block lg:mt-4">
+                <p class="text-xl lg:text-4xl text-white bold py-2 lg:py-5 text-left">Angry Ape</p>
+                <p class="text-lg lg:text-3xl text-white light text-left">By Farshad</p>
+                <p class="grid grid-cols-2 mt-2 lg:mt-8"><span class="text-xs lg:text-2xl text-white text-right light">آخرین پیشنهاد</span><span class="text-left"><span class="text-sm lg:text-2xl text-white light mr-2">ETH</span><sapn class="text-xl lg:text-3xl text-white bold">2.28</sapn></span></p>
+                <button class="mt-4 lg:mt-8 w-full lg:w-56  py-4 text-lg lg:text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
             </figcaption>
         </div>
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+        <div class="hidden lg:block bg-white/10 backdrop-blur-sm rounded-xl p-4">
             <figure class="flex relative justify-center">
                 <div class="flex absolute top-4 justify-center rounded-full bg-white/10 backdrop-blur-sm w-44 h-14 text-2xl text-white"><span class="text-white text-2xl self-center">2h 24m 12s</span></div>
                 <div class="flex absolute top-4 left-0 rounded-full bg-white/10 backdrop-blur-sm w-14 h-14">
@@ -143,70 +146,77 @@ $inPage = true;
                 <p class="text-4xl text-white bold py-5 text-left">Virtualland</p>
                 <p class="text-3xl text-white light text-left">By Amirhossein</p>
                 <p class="grid grid-cols-2 mt-8"><span class="text-2xl text-white text-right light">آخرین پیشنهاد</span><span class="text-left"><span class="text-2xl text-white light mr-2">ETH</span><sapn class="text-3xl text-white bold">2.28</sapn></span></p>
-                <button class="mt-8 px-14 py-4 text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
+                <button class="mt-8 w-56 py-4 text-2xl text-white bold rounded-xl" style="background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);">پیشنهاد سریع</button>
             </figcaption>
         </div>
     </div>
-    <div class="grid grid-cols-3 gap-x-10 mt-60">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-20 lg:gap-y-0 lg:gap-x-10 mt-40">
         <div class="relative border border-green-600 rounded-xl backdrop-blur-sm z-10" style="background: linear-gradient(106.88deg, rgba(0, 255, 26, 0.1) 19.63%, rgba(255, 255, 255, 0.1) 98.74%);">
             <div class="flex absolute right-10 -top-12 w-20 h-20 bg-white/10 border border-white/50 rounded-2xl items-center justify-center z-20"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M19.9802 45.4998C19.5802 45.4998 19.2602 45.4198 19.0202 45.3198C18.2202 45.0198 16.8602 44.0398 16.8602 40.9398V28.0398H12.1802C9.50016 28.0398 8.54016 26.7798 8.20016 26.0398C7.86016 25.2798 7.56016 23.7398 9.32016 21.7198L24.4602 4.51977C26.5002 2.19977 28.1602 2.35977 28.9602 2.65977C29.7602 2.95977 31.1202 3.93977 31.1202 7.03977V19.9398H35.8002C38.4802 19.9398 39.4402 21.1998 39.7802 21.9398C40.1202 22.6998 40.4202 24.2398 38.6602 26.2598L23.5202 43.4598C22.1002 45.0798 20.8602 45.4998 19.9802 45.4998ZM27.8602 5.47977C27.8002 5.55977 27.3802 5.75977 26.7202 6.51977L11.5802 23.7198C11.0202 24.3598 10.9402 24.7598 10.9402 24.8398C10.9802 24.8598 11.3402 25.0598 12.1802 25.0598H18.3602C19.1802 25.0598 19.8602 25.7398 19.8602 26.5598V40.9598C19.8602 41.9598 20.0402 42.3998 20.1202 42.5198C20.1802 42.4398 20.6002 42.2398 21.2602 41.4798L36.4002 24.2798C36.9602 23.6398 37.0402 23.2398 37.0402 23.1598C37.0002 23.1398 36.6402 22.9398 35.8002 22.9398H29.6202C28.8002 22.9398 28.1202 22.2598 28.1202 21.4398V7.03977C28.1402 6.03977 27.9402 5.61977 27.8602 5.47977Z" fill="white"/></svg></div>
-            <p class="mt-12 px-5 text-white text-3xl">سرعت</p>
-            <p class="px-5 my-10 text-white light text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+            <p class="mt-8 lg:mt-12 px-1 lg:px-5 text-white text-2xl lg:text-3xl">سرعت</p>
+            <p class="px-1 lg:px-5 my-3 lg:my-10 text-white light text-lg lg:text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
         </div>
         <div class="relative border border-blue-800 rounded-xl backdrop-blur-sm z-10" style="background: linear-gradient(106.88deg, rgba(74, 1, 224, 0.1) 19.63%, rgba(255, 255, 255, 0.1) 98.74%);">
             <div class="flex absolute right-10 -top-12 w-20 h-20 bg-white/10 border border-white/50 rounded-2xl items-center justify-center z-20"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M23.9998 45.5199C21.8198 45.5199 19.6598 44.8799 17.9598 43.6199L9.3598 37.1999C7.0798 35.4999 5.2998 31.9599 5.2998 29.1199V14.2599C5.2998 11.1799 7.5598 7.8999 10.4598 6.8199L20.4398 3.0799C22.4198 2.3399 25.5398 2.3399 27.5198 3.0799L37.5198 6.8199C40.4198 7.8999 42.6798 11.1799 42.6798 14.2599V29.1199C42.6798 31.9599 40.8998 35.4999 38.6198 37.1999L30.0198 43.6199C28.3398 44.8799 26.1798 45.5199 23.9998 45.5199ZM21.4998 5.8799L11.5198 9.6199C9.7998 10.2599 8.2998 12.4199 8.2998 14.2599V29.1199C8.2998 31.0199 9.6398 33.6799 11.1398 34.7999L19.7398 41.2199C22.0398 42.9399 25.9398 42.9399 28.2398 41.2199L36.8398 34.7999C38.3598 33.6599 39.6798 30.9999 39.6798 29.1199V14.2599C39.6798 12.4399 38.1798 10.2799 36.4598 9.6199L26.4798 5.8799C25.1598 5.3799 22.8398 5.3799 21.4998 5.8799Z" fill="white"/><path d="M24.0001 23.3398H23.8601C20.9601 23.2598 18.8401 21.0398 18.8401 18.3398C18.8401 15.5798 21.1001 13.3198 23.8601 13.3198C26.6201 13.3198 28.8801 15.5798 28.8801 18.3398C28.8789 19.64 28.3742 20.8892 27.4717 21.8252C26.5693 22.7612 25.3394 23.3112 24.0401 23.3598C24.0201 23.3398 24.0201 23.3398 24.0001 23.3398ZM23.8601 16.3198C22.7401 16.3198 21.8401 17.2198 21.8401 18.3398C21.8401 19.4398 22.7001 20.3198 23.7801 20.3598H24.0001C24.5129 20.329 24.9943 20.1021 25.3443 19.726C25.6943 19.3499 25.8862 18.8535 25.8801 18.3398C25.8828 18.0738 25.8323 17.8099 25.7318 17.5637C25.6312 17.3174 25.4825 17.0936 25.2944 16.9055C25.1063 16.7174 24.8826 16.5687 24.6363 16.4681C24.39 16.3676 24.1261 16.3172 23.8601 16.3198ZM24.0001 34.6998C22.2801 34.6998 20.5401 34.2398 19.2001 33.3398C17.8601 32.4598 17.1001 31.1618 17.1001 29.7818C17.1001 28.4018 17.8601 27.1018 19.2001 26.2018C21.9001 24.4018 26.1201 24.4218 28.8001 26.2018C30.1401 27.0818 30.9001 28.3818 30.9001 29.7618C30.9001 31.1418 30.1401 32.4418 28.8001 33.3418C27.4601 34.2418 25.7201 34.6998 24.0001 34.6998ZM20.8601 28.6798C20.3601 28.9998 20.0801 29.3998 20.1001 29.7598C20.1001 30.1198 20.3801 30.5198 20.8601 30.8398C22.5401 31.9598 25.4601 31.9598 27.1401 30.8398C27.6401 30.5198 27.9201 30.1198 27.9201 29.7598C27.9201 29.3998 27.6401 28.9998 27.1601 28.6798C25.4801 27.5798 22.5401 27.5798 20.8601 28.6798Z" fill="white"/></svg></div>
-            <p class="mt-12 px-5 text-white text-3xl">امنیت</p>
-            <p class="px-5 my-10 text-white light text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+            <p class="mt-8 lg:mt-12 px-1 lg:px-5 text-white text-2xl lg:text-3xl">امنیت</p>
+            <p class="px-1 lg:px-5 my-3 lg:my-10 text-white light text-lg lg:text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
         </div>
         <div class="relative border border-red-700 rounded-xl backdrop-blur-sm z-10" style="background: linear-gradient(106.88deg, rgba(255, 19, 4, 0.1) 19.63%, rgba(255, 255, 255, 0.1) 98.74%);">
             <div class="flex absolute right-10 -top-12 w-20 h-20 bg-white/10 border border-white/50 rounded-2xl items-center justify-center z-20"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M13.1 45.5C15.36 45.5 17.74 44.96 20.2 43.92C22.6 42.9 25.02 41.5 27.38 39.8C29.72 38.08 31.98 36.16 34.12 34.06C36.24 31.92 38.16 29.66 39.86 27.34C41.58 24.94 42.96 22.54 43.94 20.22C44.98 17.74 45.5 15.34 45.5 13.08C45.5 11.52 45.22 10.04 44.68 8.66C44.12 7.24 43.22 5.92 42 4.78C40.46 3.26 38.7 2.5 36.82 2.5C36.04 2.5 35.24 2.68 34.56 3C33.78 3.36 33.12 3.9 32.64 4.62L28 11.16C27.58 11.74 27.26 12.3 27.04 12.86C26.78 13.46 26.64 14.06 26.64 14.64C26.64 15.4 26.86 16.14 27.28 16.84C27.6476 17.4648 28.0984 18.0367 28.62 18.54L29.98 19.96C29.96 20.02 29.94 20.06 29.92 20.1C29.68 20.52 29.2 21.24 28.28 22.32C27.3 23.44 26.38 24.46 25.46 25.4C24.28 26.56 23.3 27.48 22.38 28.24C21.24 29.2 20.5 29.68 20.06 29.9L20.1 30L18.64 28.56C18.02 27.94 17.42 27.48 16.84 27.18C15.74 26.5 14.34 26.38 12.94 26.96C12.42 27.18 11.86 27.48 11.26 27.9L4.62 32.62C3.88 33.12 3.34 33.76 3.02 34.52C2.72 35.28 2.58 35.98 2.58 36.68C2.58 37.64 2.8 38.6 3.22 39.5C3.64 40.4 4.16 41.18 4.82 41.9C5.96 43.16 7.2 44.06 8.64 44.64C10.02 45.2 11.52 45.5 13.1 45.5ZM36.82 5.5C37.92 5.5 38.94 5.98 39.92 6.94C40.84 7.8 41.48 8.74 41.88 9.76C42.3 10.8 42.5 11.9 42.5 13.08C42.5 14.94 42.06 16.96 41.18 19.04C40.28 21.16 39.02 23.36 37.42 25.56C35.82 27.76 34 29.9 32 31.92C30 33.9 27.84 35.74 25.62 37.36C23.46 38.94 21.24 40.22 19.04 41.14C15.62 42.6 12.42 42.94 9.78 41.84C8.76 41.42 7.86 40.78 7.04 39.86C6.58 39.36 6.22 38.82 5.92 38.18C5.68 37.68 5.56 37.16 5.56 36.64C5.56 36.32 5.62 36 5.78 35.64C5.90786 35.3923 6.10165 35.1846 6.34 35.04L12.98 30.32C13.38 30.04 13.74 29.84 14.08 29.7C14.52 29.52 14.7 29.34 15.38 29.76C15.78 29.96 16.14 30.26 16.54 30.66L18.06 32.16C18.84 32.92 20.04 33.1 20.96 32.76L21.5 32.52C22.32 32.08 23.28 31.4 24.34 30.5C25.3 29.68 26.34 28.72 27.6 27.48C28.58 26.48 29.56 25.42 30.58 24.24C31.52 23.14 32.2 22.2 32.62 21.42L32.86 20.82C32.98 20.36 33.02 20.1 33.02 19.82C33.02 19.1 32.76 18.46 32.26 17.96L30.76 16.4C30.36 16 30.06 15.62 29.86 15.28C29.7 15.02 29.64 14.8 29.64 14.6C29.64 14.44 29.7 14.2 29.8 13.96C29.94 13.64 30.16 13.28 30.44 12.9L35.08 6.34C35.2672 6.07129 35.5227 5.85728 35.82 5.72C36.14 5.58 36.48 5.5 36.82 5.5ZM20.1 30.02L20.42 31.38L19.88 29.98C19.98 29.96 20.06 29.98 20.1 30.02ZM11 19.5C11.82 19.5 12.5 18.82 12.5 18C12.5 17.28 13.22 15.78 14.42 14.5C15.6 13.24 16.9 12.5 18 12.5C18.82 12.5 19.5 11.82 19.5 11C19.5 10.18 18.82 9.5 18 9.5C16.06 9.5 14.02 10.54 12.24 12.44C10.58 14.22 9.5 16.4 9.5 18C9.5 18.82 10.18 19.5 11 19.5ZM4 19.5C4.82 19.5 5.5 18.82 5.5 18C5.5 11.1 11.1 5.5 18 5.5C18.82 5.5 19.5 4.82 19.5 4C19.5 3.18 18.82 2.5 18 2.5C9.46 2.5 2.5 9.46 2.5 18C2.5 18.82 3.18 19.5 4 19.5Z" fill="white"/></svg></div>
-            <p class="mt-12 px-5 text-white text-3xl">پشتیبانی</p>
-            <p class="px-5 my-10 text-white light text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+            <p class="mt-8 lg:mt-12 px-1 lg:px-5 text-white text-2xl lg:text-3xl">پشتیبانی</p>
+            <p class="px-1 lg:px-5 my-3 lg:my-10 text-white light text-lg lg:text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
         </div>
     </div>
     <!--    nav    -->
-    <div class="flex mt-32 w-96">
-        <div class="w-1/4"><img src="../layouts/images/HotBids.png"></div>
-        <div class=" w-3/4 self-center">
-            <p class="text-white text-4xl pb-2">پر بازدیدترین ها</p>
-            <p class="text-white text-2xl light">Trends</p>
+    <div class="flex mt-14 w-96">
+        <div class="flex w-12 lg:w-20 h-12 lg:h-20 ml-2 justify-center self-center items-center text-lg rounded-full" style="background: linear-gradient(270.13deg, #F44A15 -8.2%, rgba(252, 6, 6, 0.903404) 48.47%, rgba(130, 18, 241, 0.81) 99.55%);"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 lg:w-12 h-6 lg:h-12" viewBox="0 0 48 48" fill="none"><path d="M11.4802 32C11.7002 31.02 11.3002 29.62 10.6002 28.92L5.74021 24.06C4.22021 22.54 3.62021 20.92 4.06021 19.52C4.52021 18.12 5.94021 17.16 8.06021 16.8L14.3002 15.76C15.2002 15.6 16.3002 14.8 16.7202 13.98L20.1602 7.08C21.1602 5.1 22.5202 4 24.0002 4C25.4802 4 26.8402 5.1 27.8402 7.08L31.2802 13.98C31.5402 14.5 32.0802 15 32.6602 15.34L11.1202 36.88C10.8402 37.16 10.3602 36.9 10.4402 36.5L11.4802 32ZM37.4002 28.924C36.6802 29.644 36.2802 31.024 36.5202 32.004L37.9002 38.024C38.4802 40.524 38.1202 42.404 36.8802 43.304C36.3535 43.6721 35.7226 43.8614 35.0802 43.844C34.0602 43.844 32.8602 43.464 31.5402 42.684L25.6802 39.204C24.7602 38.664 23.2402 38.664 22.3202 39.204L16.4602 42.684C14.2402 43.984 12.3402 44.204 11.1202 43.304C10.6602 42.964 10.3202 42.504 10.1002 41.904L34.4202 17.584C35.3402 16.664 36.6402 16.244 37.9002 16.464L39.9202 16.804C42.0402 17.164 43.4602 18.124 43.9202 19.524C44.3602 20.924 43.7602 22.544 42.2402 24.064L37.4002 28.924Z" fill="white"/></svg></div>
+        <div>
+            <p class="text-white text-lg lg:text-4xl pb-2">پر بازدیدترین ها</p>
+            <p class="text-white text-sm lg:text-2xl light">Trends</p>
         </div>
     </div>
-    <div class="grid grid-cols-3 gap-x-10 mt-80">
-        <div class="flex relative justify-center h-56 rounded-2xl bg-white/10">
-            <img src="../layouts/images/dog.png" as/dog NFTlt="" class="absolute rounded-2xl h-96 -top-64">
-            <div class="w-full px-4 mt-36">
-                <p class="text-left text-white text-3xl bold">D'EVOLs</p>
-                <p class="grid grid-cols-2 mt-2"><span class="flex"><span class="text-white text-2xl bold">ETH</span><span class="text-white text-2xl bold px-2">12.3</span><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="34" viewBox="0 0 21 34" fill="none"><g clip-path="url(#clip0_150_146)"><path d="M20.4683 17.115L10.4999 23.205L0.524902 17.115L10.4999 0L20.4683 17.115ZM10.4999 25.1606L0.524902 19.0706L10.4999 33.6L20.4749 19.0706L10.4999 25.1606Z" fill="#FFBF1C"/></g><defs><clipPath id="clip0_150_146"><rect width="21" height="33.6" fill="white"/></clipPath></defs></svg></span></span><span class="text-white text-2xl light text-left">By Reza</span></p>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-4 lg:gap-x-10 gap-y-6 lg:gap-y-0 mt-40 lg:mt-80">
+        <div class="flex relative justify-center h-24 lg:h-56 rounded-2xl bg-white/10">
+            <img src="../layouts/images/dog.png" alt="dog NFT" class="absolute rounded-2xl lg:h-96 h-36 -top-32 lg:-top-64">
+            <div class="w-full px-1 lg:px-4 mt-6 lg:mt-36">
+                <p class="text-left text-white text-lg lg:text-3xl lg:bold">D'EVOLs</p>
+                <p class="grid grid-cols-2 mt-2"><span class="flex"><span class="text-white text-xs lg:text-2xl bold">ETH</span><span class="text-white text-xs lg:text-2xl bold px-2">12.3</span><span class="hidden lg:inline"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="34" viewBox="0 0 21 34" fill="none"><g clip-path="url(#clip0_150_146)"><path d="M20.4683 17.115L10.4999 23.205L0.524902 17.115L10.4999 0L20.4683 17.115ZM10.4999 25.1606L0.524902 19.0706L10.4999 33.6L20.4749 19.0706L10.4999 25.1606Z" fill="#FFBF1C"/></g><defs><clipPath id="clip0_150_146"><rect width="21" height="33.6" fill="white"/></clipPath></defs></svg></span></span><span class="text-white text-xs lg:text-2xl light text-left">By Reza</span></p>
             </div>
         </div>
-        <div class="flex relative justify-center h-56 rounded-2xl bg-white/10">
-            <img src="../layouts/images/wolf.png" a/wolf NFTlt="" class="absolute rounded-2xl h-96 -top-64">
-            <div class="w-full px-4 mt-36">
-                <p class="text-left text-white text-3xl bold">D'EVOLs</p>
-                <p class="grid grid-cols-2 mt-2"><span class="flex"><span class="text-white text-2xl bold">ETH</span><span class="text-white text-2xl bold px-2">12.3</span><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="34" viewBox="0 0 21 34" fill="none"><g clip-path="url(#clip0_150_146)"><path d="M20.4683 17.115L10.4999 23.205L0.524902 17.115L10.4999 0L20.4683 17.115ZM10.4999 25.1606L0.524902 19.0706L10.4999 33.6L20.4749 19.0706L10.4999 25.1606Z" fill="#FFBF1C"/></g><defs><clipPath id="clip0_150_146"><rect width="21" height="33.6" fill="white"/></clipPath></defs></svg></span></span><span class="text-white text-2xl light text-left">By Amir</span></p>
+        <div class="flex relative justify-center h-24 lg:h-56 rounded-2xl bg-white/10">
+            <img src="../layouts/images/wolf.png" alt="wolf NFT" class="absolute rounded-2xl lg:h-96 h-36 -top-32 lg:-top-64">
+            <div class="w-full px-1 lg:px-4 mt-6 lg:mt-36">
+                <p class="text-left text-white text-lg lg:text-3xl lg:bold">D'EVOLs</p>
+                <p class="grid grid-cols-2 mt-2"><span class="flex"><span class="text-white text-xs lg:text-2xl bold">ETH</span><span class="text-white text-xs lg:text-2xl bold px-2">12.3</span><span class="hidden lg:inline"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="34" viewBox="0 0 21 34" fill="none"><g clip-path="url(#clip0_150_146)"><path d="M20.4683 17.115L10.4999 23.205L0.524902 17.115L10.4999 0L20.4683 17.115ZM10.4999 25.1606L0.524902 19.0706L10.4999 33.6L20.4749 19.0706L10.4999 25.1606Z" fill="#FFBF1C"/></g><defs><clipPath id="clip0_150_146"><rect width="21" height="33.6" fill="white"/></clipPath></defs></svg></span></span><span class="text-white text-xs lg:text-2xl light text-left">By Amir</span></p>
             </div>
         </div>
-        <div class="flex relative justify-center h-56 rounded-2xl bg-white/10">
-            <img src="../layouts/images/horse.png" alt="horse NFT" class="absolute rounded-2xl h-96 -top-64">
-            <div class="w-full px-4 mt-36">
-                <p class="text-left text-white text-3xl bold">D'EVOLs</p>
-                <p class="grid grid-cols-2 mt-2"><span class="flex"><span class="text-white text-2xl bold">ETH</span><span class="text-white text-2xl bold px-2">12.3</span><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="34" viewBox="0 0 21 34" fill="none"><g clip-path="url(#clip0_150_146)"><path d="M20.4683 17.115L10.4999 23.205L0.524902 17.115L10.4999 0L20.4683 17.115ZM10.4999 25.1606L0.524902 19.0706L10.4999 33.6L20.4749 19.0706L10.4999 25.1606Z" fill="#FFBF1C"/></g><defs><clipPath id="clip0_150_146"><rect width="21" height="33.6" fill="white"/></clipPath></defs></svg></span></span><span class="text-white text-2xl light text-left">By Mahsa</span></p>
+        <div class="flex relative justify-center h-24 lg:h-56 mt-32 lg:mt-0 rounded-2xl bg-white/10">
+            <img src="../layouts/images/horse.png" alt="horse NFT" class="absolute rounded-2xl lg:h-96 h-36 -top-32 lg:-top-64">
+            <div class="w-full px-1 lg:px-4 mt-6 lg:mt-36">
+                <p class="text-left text-white text-lg lg:text-3xl lg:bold">D'EVOLs</p>
+                <p class="grid grid-cols-2 mt-2"><span class="flex"><span class="text-white text-xs lg:text-2xl bold">ETH</span><span class="text-white text-xs lg:text-2xl bold px-2">12.3</span><span class="hidden lg:inline"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="34" viewBox="0 0 21 34" fill="none"><g clip-path="url(#clip0_150_146)"><path d="M20.4683 17.115L10.4999 23.205L0.524902 17.115L10.4999 0L20.4683 17.115ZM10.4999 25.1606L0.524902 19.0706L10.4999 33.6L20.4749 19.0706L10.4999 25.1606Z" fill="#FFBF1C"/></g><defs><clipPath id="clip0_150_146"><rect width="21" height="33.6" fill="white"/></clipPath></defs></svg></span></span><span class="text-white text-xs lg:text-2xl light text-left">By Mahsa</span></p>
+            </div>
+        </div>
+        <div class="flex lg:hidden relative justify-center h-24 mt-32 rounded-2xl bg-white/10">
+            <img src="../layouts/images/horse.png" alt="horse NFT" class="absolute rounded-2xl h-36 -top-32">
+            <div class="w-full px-1 mt-6">
+                <p class="text-left text-white text-lg">D'EVOLs</p>
+                <p class="grid grid-cols-2 mt-2"><span class="flex"><span class="text-white text-xs bold">ETH</span><span class="text-white text-xs bold px-2">12.3</span><span class="hidden<svg xmlns="http://www.w3.org/2000/svg" width="21" height="34" viewBox="0 0 21 34" fill="none"><g clip-path="url(#clip0_150_146)"><path d="M20.4683 17.115L10.4999 23.205L0.524902 17.115L10.4999 0L20.4683 17.115ZM10.4999 25.1606L0.524902 19.0706L10.4999 33.6L20.4749 19.0706L10.4999 25.1606Z" fill="#FFBF1C"/></g><defs><clipPath id="clip0_150_146"><rect width="21" height="33.6" fill="white"/></clipPath></defs></svg></span></span><span class="text-white text-xs light text-left">By Mahsa</span></p>
             </div>
         </div>
     </div>
     <!--    nav    -->
-    <div class="flex mt-32 w-96">
-        <div class="w-1/4"><img src="../layouts/images/HotBids.png"></div>
-        <div class=" w-3/4 self-center">
-            <p class="text-white text-4xl pb-2">هنرمندان برتر</p>
-            <p class="text-white text-2xl light">Top Creators</p>
+    <div class="flex mt-14 w-96">
+        <div class="flex w-12 lg:w-20 h-12 lg:h-20 ml-2 justify-center self-center items-center text-lg rounded-full" style="background: linear-gradient(270.13deg, #F44A15 -8.2%, rgba(252, 6, 6, 0.903404) 48.47%, rgba(130, 18, 241, 0.81) 99.55%);"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 lg:w-12 h-6 lg:h-12" viewBox="0 0 48 48" fill="none"><path d="M23.9998 24C26.652 24 29.1955 22.9464 31.0709 21.0711C32.9463 19.1957 33.9998 16.6522 33.9998 14C33.9998 11.3478 32.9463 8.8043 31.0709 6.92893C29.1955 5.05357 26.652 4 23.9998 4C21.3477 4 18.8041 5.05357 16.9288 6.92893C15.0534 8.8043 13.9998 11.3478 13.9998 14C13.9998 16.6522 15.0534 19.1957 16.9288 21.0711C18.8041 22.9464 21.3477 24 23.9998 24ZM23.9998 29C13.9798 29 5.81982 35.72 5.81982 44C5.81982 44.56 6.25982 45 6.81982 45H41.1798C41.7398 45 42.1798 44.56 42.1798 44C42.1798 35.72 34.0198 29 23.9998 29Z" fill="white"></path></svg></div>
+        <div>
+            <p class="text-white text-lg lg:text-4xl pb-2">هنرمندان برتر</p>
+            <p class="text-white text-sm lg:text-2xl light">Top Creators</p>
         </div>
     </div>
-    <div class="grid grid-cols-3 gap-x-5 gap-y-10 mt-10">
-        <div class="flex border border-white/20 bg-white/10 rounded-xl p-8 gap-x-4">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-3 lg:gap-x-5 gap-y-5 lg:gap-y-10 mt-10">
+        <div class="flex border border-white/20 bg-white/10 rounded-xl p-2 lg:p-8 gap-x-1 lg:gap-x-4">
             <div class="w-2/3 h-full">
-                <p class="text-white text-2xl text-left py-2">Negar77</p>
+                <p class="text-white text-sm lg:text-2xl text-left py-1">Negar77</p>
                 <p dir="ltr" class="flex">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
@@ -214,18 +224,19 @@ $inPage = true;
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><g clip-path="url(#clip0_13737_28)"><path d="M12.5281 15.9905C12.1543 15.9905 11.6746 15.8706 11.0751 15.5179L8.96607 14.2695C8.7474 14.1425 8.32419 14.1425 8.11258 14.2695L5.99651 15.5179C4.74803 16.2586 4.01446 15.9623 3.68294 15.7225C3.35848 15.4827 2.85062 14.869 3.18214 13.4583L3.68294 11.2928C3.73937 11.0671 3.62651 10.6792 3.45723 10.5099L1.70794 8.76062C0.833297 7.88597 0.903833 7.1383 1.02374 6.77151C1.14365 6.40472 1.52455 5.7558 2.73776 5.55124L4.98785 5.1774C5.19946 5.14213 5.50276 4.91642 5.59446 4.72597L6.84294 2.23606C7.40723 1.10044 8.14785 0.931152 8.5358 0.931152C8.92374 0.931152 9.66437 1.10044 10.2287 2.23606L11.4701 4.71892C11.5688 4.90937 11.8721 5.13508 12.0837 5.17035L14.3338 5.54419C15.5541 5.74874 15.935 6.39767 16.0479 6.76446C16.1607 7.13124 16.2312 7.87892 15.3637 8.75356L13.6144 10.5099C13.4451 10.6792 13.3393 11.0601 13.3887 11.2928L13.8895 13.4583C14.2139 14.869 13.7131 15.4827 13.3887 15.7225C13.2123 15.8495 12.9302 15.9905 12.5281 15.9905ZM8.5358 13.1127C8.88142 13.1127 9.22705 13.1973 9.50214 13.3595L11.6112 14.608C12.2248 14.9748 12.6128 14.9748 12.7609 14.869C12.909 14.7632 13.0148 14.3894 12.8596 13.6981L12.3588 11.5327C12.2248 10.9472 12.4435 10.1925 12.8667 9.76223L14.616 8.01294C14.9616 7.66731 15.1168 7.32874 15.0462 7.09597C14.9687 6.86321 14.6442 6.67276 14.1645 6.59517L11.9145 6.22133C11.3713 6.12963 10.7788 5.69231 10.532 5.19856L9.29053 2.71571C9.06482 2.26428 8.78267 1.99624 8.5358 1.99624C8.28892 1.99624 8.00678 2.26428 7.78812 2.71571L6.53964 5.19856C6.29276 5.69231 5.70026 6.12963 5.15714 6.22133L2.9141 6.59517C2.43446 6.67276 2.10999 6.86321 2.0324 7.09597C1.95482 7.32874 2.11705 7.67437 2.46267 8.01294L4.21196 9.76223C4.63517 10.1854 4.85383 10.9472 4.71982 11.5327L4.21901 13.6981C4.05678 14.3964 4.16964 14.7632 4.31776 14.869C4.46589 14.9748 4.84678 14.9678 5.46749 14.608L7.57651 13.3595C7.84455 13.1973 8.19017 13.1127 8.5358 13.1127Z" fill="white" fill-opacity="0.5"/></g><defs><clipPath id="clip0_13737_28"><rect width="16.9286" height="16.9286" fill="white" transform="translate(0.0712891)"/></clipPath></defs></svg></span>
                 </p>
-                <p class="flex mt-4">
-                    <span class="text-white text-lg light w-1/2">فروش کل:</span>
-                    <span class="text-white text-left text-lg light w-1/2">52.21 ETH</span>
+                <p class="flex mt-2">
+                    <span class="text-white text-xs lg:text-lg light w-1/2">فروش کل:</span>
+                    <span class="text-white text-left text-xs lg:text-lg light w-1/2">52 ETH</span>
                 </p>
             </div>
             <div class="flex w-1/3 h-full justify-center">
-                <img src="../layouts/images/profNegar77.png" alt="Negar77">
+                <img class="hidden lg:block" src="../layouts/images/profNegar77_lg.png" alt="Negar77">
+                <img class="block lg:hidden" src="../layouts/images/profNegar77_sm.png" alt="Negar77">
             </div>
         </div>
-        <div class="flex border border-white/20 bg-white/10 rounded-xl p-8 gap-x-4">
+        <div class="flex border border-white/20 bg-white/10 rounded-xl p-2 lg:p-8 gap-x-1 lg:gap-x-4">
             <div class="w-2/3 h-full">
-                <p class="text-white text-2xl text-left py-2">Amirhossein75</p>
+                <p class="text-white text-sm lg:text-2xl text-left py-1">Amirhossein75</p>
                 <p dir="ltr" class="flex">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
@@ -233,18 +244,19 @@ $inPage = true;
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><g clip-path="url(#clip0_13737_28)"><path d="M12.5281 15.9905C12.1543 15.9905 11.6746 15.8706 11.0751 15.5179L8.96607 14.2695C8.7474 14.1425 8.32419 14.1425 8.11258 14.2695L5.99651 15.5179C4.74803 16.2586 4.01446 15.9623 3.68294 15.7225C3.35848 15.4827 2.85062 14.869 3.18214 13.4583L3.68294 11.2928C3.73937 11.0671 3.62651 10.6792 3.45723 10.5099L1.70794 8.76062C0.833297 7.88597 0.903833 7.1383 1.02374 6.77151C1.14365 6.40472 1.52455 5.7558 2.73776 5.55124L4.98785 5.1774C5.19946 5.14213 5.50276 4.91642 5.59446 4.72597L6.84294 2.23606C7.40723 1.10044 8.14785 0.931152 8.5358 0.931152C8.92374 0.931152 9.66437 1.10044 10.2287 2.23606L11.4701 4.71892C11.5688 4.90937 11.8721 5.13508 12.0837 5.17035L14.3338 5.54419C15.5541 5.74874 15.935 6.39767 16.0479 6.76446C16.1607 7.13124 16.2312 7.87892 15.3637 8.75356L13.6144 10.5099C13.4451 10.6792 13.3393 11.0601 13.3887 11.2928L13.8895 13.4583C14.2139 14.869 13.7131 15.4827 13.3887 15.7225C13.2123 15.8495 12.9302 15.9905 12.5281 15.9905ZM8.5358 13.1127C8.88142 13.1127 9.22705 13.1973 9.50214 13.3595L11.6112 14.608C12.2248 14.9748 12.6128 14.9748 12.7609 14.869C12.909 14.7632 13.0148 14.3894 12.8596 13.6981L12.3588 11.5327C12.2248 10.9472 12.4435 10.1925 12.8667 9.76223L14.616 8.01294C14.9616 7.66731 15.1168 7.32874 15.0462 7.09597C14.9687 6.86321 14.6442 6.67276 14.1645 6.59517L11.9145 6.22133C11.3713 6.12963 10.7788 5.69231 10.532 5.19856L9.29053 2.71571C9.06482 2.26428 8.78267 1.99624 8.5358 1.99624C8.28892 1.99624 8.00678 2.26428 7.78812 2.71571L6.53964 5.19856C6.29276 5.69231 5.70026 6.12963 5.15714 6.22133L2.9141 6.59517C2.43446 6.67276 2.10999 6.86321 2.0324 7.09597C1.95482 7.32874 2.11705 7.67437 2.46267 8.01294L4.21196 9.76223C4.63517 10.1854 4.85383 10.9472 4.71982 11.5327L4.21901 13.6981C4.05678 14.3964 4.16964 14.7632 4.31776 14.869C4.46589 14.9748 4.84678 14.9678 5.46749 14.608L7.57651 13.3595C7.84455 13.1973 8.19017 13.1127 8.5358 13.1127Z" fill="white" fill-opacity="0.5"/></g><defs><clipPath id="clip0_13737_28"><rect width="16.9286" height="16.9286" fill="white" transform="translate(0.0712891)"/></clipPath></defs></svg></span>
                 </p>
-                <p class="flex mt-4">
-                    <span class="text-white text-lg light w-1/2">فروش کل:</span>
-                    <span class="text-white text-left text-lg light w-1/2">52.21 ETH</span>
+                <p class="flex mt-2">
+                    <span class="text-white text-xs lg:text-lg light w-1/2">فروش کل:</span>
+                    <span class="text-white text-left text-xs lg:text-lg light w-1/2">52 ETH</span>
                 </p>
             </div>
             <div class="flex w-1/3 h-full justify-center">
-                <img src="../layouts/images/profAmirhossein75.png" alt="Amirhossein75">
+                <img class="hidden lg:block" src="../layouts/images/profAmirhossein75_lg.png" alt="Amirhossein75">
+                <img class="block lg:hidden" src="../layouts/images/profAmirhossein75_sm.png" alt="Amirhossein75">
             </div>
         </div>
-        <div class="flex border border-white/20 bg-white/10 rounded-xl p-8 gap-x-4">
+        <div class="flex border border-white/20 bg-white/10 rounded-xl p-2 lg:p-8 gap-x-1 lg:gap-x-4">
             <div class="w-2/3 h-full">
-                <p class="text-white text-2xl text-left py-2">Mahdi_nft</p>
+                <p class="text-white text-sm lg:text-2xl text-left py-1">Mahdi_nft</p>
                 <p dir="ltr" class="flex">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
@@ -252,18 +264,19 @@ $inPage = true;
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><g clip-path="url(#clip0_13737_28)"><path d="M12.5281 15.9905C12.1543 15.9905 11.6746 15.8706 11.0751 15.5179L8.96607 14.2695C8.7474 14.1425 8.32419 14.1425 8.11258 14.2695L5.99651 15.5179C4.74803 16.2586 4.01446 15.9623 3.68294 15.7225C3.35848 15.4827 2.85062 14.869 3.18214 13.4583L3.68294 11.2928C3.73937 11.0671 3.62651 10.6792 3.45723 10.5099L1.70794 8.76062C0.833297 7.88597 0.903833 7.1383 1.02374 6.77151C1.14365 6.40472 1.52455 5.7558 2.73776 5.55124L4.98785 5.1774C5.19946 5.14213 5.50276 4.91642 5.59446 4.72597L6.84294 2.23606C7.40723 1.10044 8.14785 0.931152 8.5358 0.931152C8.92374 0.931152 9.66437 1.10044 10.2287 2.23606L11.4701 4.71892C11.5688 4.90937 11.8721 5.13508 12.0837 5.17035L14.3338 5.54419C15.5541 5.74874 15.935 6.39767 16.0479 6.76446C16.1607 7.13124 16.2312 7.87892 15.3637 8.75356L13.6144 10.5099C13.4451 10.6792 13.3393 11.0601 13.3887 11.2928L13.8895 13.4583C14.2139 14.869 13.7131 15.4827 13.3887 15.7225C13.2123 15.8495 12.9302 15.9905 12.5281 15.9905ZM8.5358 13.1127C8.88142 13.1127 9.22705 13.1973 9.50214 13.3595L11.6112 14.608C12.2248 14.9748 12.6128 14.9748 12.7609 14.869C12.909 14.7632 13.0148 14.3894 12.8596 13.6981L12.3588 11.5327C12.2248 10.9472 12.4435 10.1925 12.8667 9.76223L14.616 8.01294C14.9616 7.66731 15.1168 7.32874 15.0462 7.09597C14.9687 6.86321 14.6442 6.67276 14.1645 6.59517L11.9145 6.22133C11.3713 6.12963 10.7788 5.69231 10.532 5.19856L9.29053 2.71571C9.06482 2.26428 8.78267 1.99624 8.5358 1.99624C8.28892 1.99624 8.00678 2.26428 7.78812 2.71571L6.53964 5.19856C6.29276 5.69231 5.70026 6.12963 5.15714 6.22133L2.9141 6.59517C2.43446 6.67276 2.10999 6.86321 2.0324 7.09597C1.95482 7.32874 2.11705 7.67437 2.46267 8.01294L4.21196 9.76223C4.63517 10.1854 4.85383 10.9472 4.71982 11.5327L4.21901 13.6981C4.05678 14.3964 4.16964 14.7632 4.31776 14.869C4.46589 14.9748 4.84678 14.9678 5.46749 14.608L7.57651 13.3595C7.84455 13.1973 8.19017 13.1127 8.5358 13.1127Z" fill="white" fill-opacity="0.5"/></g><defs><clipPath id="clip0_13737_28"><rect width="16.9286" height="16.9286" fill="white" transform="translate(0.0712891)"/></clipPath></defs></svg></span>
                 </p>
-                <p class="flex mt-4">
-                    <span class="text-white text-lg light w-1/2">فروش کل:</span>
-                    <span class="text-white text-left text-lg light w-1/2">52.21 ETH</span>
+                <p class="flex mt-2">
+                    <span class="text-white text-xs lg:text-lg light w-1/2">فروش کل:</span>
+                    <span class="text-white text-left text-xs lg:text-lg light w-1/2">52 ETH</span>
                 </p>
             </div>
             <div class="flex w-1/3 h-full justify-center">
-                <img src="../layouts/images/profMahdi_nft.png" alt="Mahdi_nft">
+                <img class="hidden lg:block" src="../layouts/images/profMahdi_nft_lg.png" alt="Mahdi_nft">
+                <img class="block lg:hidden" src="../layouts/images/profMahdi_nft_sm.png" alt="Mahdi_nft">
             </div>
         </div>
-        <div class="flex border border-white/20 bg-white/10 rounded-xl p-8 gap-x-4">
+        <div class="flex border border-white/20 bg-white/10 rounded-xl p-2 lg:p-8 gap-x-1 lg:gap-x-4">
             <div class="w-2/3 h-full">
-                <p class="text-white text-2xl text-left py-2">Kamran1995</p>
+                <p class="text-white text-sm lg:text-2xl text-left py-1">Kamran1995</p>
                 <p dir="ltr" class="flex">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
@@ -271,16 +284,17 @@ $inPage = true;
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M4.04885 11.2856C4.12644 10.94 3.98536 10.4463 3.73849 10.1994L2.02447 8.48538C1.4884 7.94931 1.27679 7.37797 1.43197 6.88422C1.5942 6.39047 2.09501 6.05189 2.84269 5.92493L5.0434 5.55815C5.36081 5.50172 5.74876 5.21957 5.89688 4.93038L7.1101 2.49689C7.46278 1.79859 7.94242 1.41064 8.46438 1.41064C8.98635 1.41064 9.46599 1.79859 9.81867 2.49689L11.0319 4.93038C11.1236 5.11377 11.314 5.29011 11.5186 5.41002L3.92188 13.0067C3.82313 13.1055 3.65385 13.0138 3.68206 12.8727L4.04885 11.2856ZM13.1903 10.2008C12.9363 10.4547 12.7953 10.9414 12.8799 11.2871L13.3666 13.4102C13.5712 14.2919 13.4442 14.9549 13.0069 15.2723C12.8211 15.4022 12.5986 15.4689 12.3721 15.4628C12.0123 15.4628 11.5891 15.3288 11.1236 15.0537L9.05688 13.8263C8.73242 13.6359 8.19635 13.6359 7.87188 13.8263L5.80519 15.0537C5.02224 15.5121 4.35215 15.5897 3.92188 15.2723C3.75965 15.1524 3.63974 14.9902 3.56215 14.7786L12.1393 6.20143C12.4638 5.87697 12.9222 5.72884 13.3666 5.80643L14.079 5.92634C14.8267 6.05331 15.3275 6.39188 15.4897 6.88563C15.6449 7.37938 15.4333 7.95072 14.8972 8.48679L13.1903 10.2008Z" fill="#FFE600"/></svg></span>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><g clip-path="url(#clip0_13737_28)"><path d="M12.5281 15.9905C12.1543 15.9905 11.6746 15.8706 11.0751 15.5179L8.96607 14.2695C8.7474 14.1425 8.32419 14.1425 8.11258 14.2695L5.99651 15.5179C4.74803 16.2586 4.01446 15.9623 3.68294 15.7225C3.35848 15.4827 2.85062 14.869 3.18214 13.4583L3.68294 11.2928C3.73937 11.0671 3.62651 10.6792 3.45723 10.5099L1.70794 8.76062C0.833297 7.88597 0.903833 7.1383 1.02374 6.77151C1.14365 6.40472 1.52455 5.7558 2.73776 5.55124L4.98785 5.1774C5.19946 5.14213 5.50276 4.91642 5.59446 4.72597L6.84294 2.23606C7.40723 1.10044 8.14785 0.931152 8.5358 0.931152C8.92374 0.931152 9.66437 1.10044 10.2287 2.23606L11.4701 4.71892C11.5688 4.90937 11.8721 5.13508 12.0837 5.17035L14.3338 5.54419C15.5541 5.74874 15.935 6.39767 16.0479 6.76446C16.1607 7.13124 16.2312 7.87892 15.3637 8.75356L13.6144 10.5099C13.4451 10.6792 13.3393 11.0601 13.3887 11.2928L13.8895 13.4583C14.2139 14.869 13.7131 15.4827 13.3887 15.7225C13.2123 15.8495 12.9302 15.9905 12.5281 15.9905ZM8.5358 13.1127C8.88142 13.1127 9.22705 13.1973 9.50214 13.3595L11.6112 14.608C12.2248 14.9748 12.6128 14.9748 12.7609 14.869C12.909 14.7632 13.0148 14.3894 12.8596 13.6981L12.3588 11.5327C12.2248 10.9472 12.4435 10.1925 12.8667 9.76223L14.616 8.01294C14.9616 7.66731 15.1168 7.32874 15.0462 7.09597C14.9687 6.86321 14.6442 6.67276 14.1645 6.59517L11.9145 6.22133C11.3713 6.12963 10.7788 5.69231 10.532 5.19856L9.29053 2.71571C9.06482 2.26428 8.78267 1.99624 8.5358 1.99624C8.28892 1.99624 8.00678 2.26428 7.78812 2.71571L6.53964 5.19856C6.29276 5.69231 5.70026 6.12963 5.15714 6.22133L2.9141 6.59517C2.43446 6.67276 2.10999 6.86321 2.0324 7.09597C1.95482 7.32874 2.11705 7.67437 2.46267 8.01294L4.21196 9.76223C4.63517 10.1854 4.85383 10.9472 4.71982 11.5327L4.21901 13.6981C4.05678 14.3964 4.16964 14.7632 4.31776 14.869C4.46589 14.9748 4.84678 14.9678 5.46749 14.608L7.57651 13.3595C7.84455 13.1973 8.19017 13.1127 8.5358 13.1127Z" fill="white" fill-opacity="0.5"/></g><defs><clipPath id="clip0_13737_28"><rect width="16.9286" height="16.9286" fill="white" transform="translate(0.0712891)"/></clipPath></defs></svg></span>
                 </p>
-                <p class="flex mt-4">
-                    <span class="text-white text-lg light w-1/2">فروش کل:</span>
-                    <span class="text-white text-left text-lg light w-1/2">52.21 ETH</span>
+                <p class="flex mt-2">
+                    <span class="text-white text-xs lg:text-lg light w-1/2">فروش کل:</span>
+                    <span class="text-white text-left text-xs lg:text-lg light w-1/2">52 ETH</span>
                 </p>
             </div>
             <div class="flex w-1/3 h-full justify-center">
-                <img src="../layouts/images/profKamran1995.png" alt="Kamran1995">
+                <img class="hidden lg:block" src="../layouts/images/profKamran1995_lg.png" alt="Kamran1995">
+                <img class="block lg:hidden" src="../layouts/images/profKamran1995_sm.png" alt="Kamran1995">
             </div>
         </div>
-        <div class="flex border border-white/20 bg-white/10 rounded-xl p-8 gap-x-4">
+        <div class="hidden lg:flex border border-white/20 bg-white/10 rounded-xl p-8 gap-x-4">
             <div class="w-2/3 h-full">
                 <p class="text-white text-2xl text-left py-2">Mahsa_art</p>
                 <p dir="ltr" class="flex">
@@ -299,7 +313,7 @@ $inPage = true;
                 <img src="../layouts/images/profMahsa_art.png" alt="Mahsa_art">
             </div>
         </div>
-        <div class="flex border border-white/20 bg-white/10 rounded-xl p-8 gap-x-4">
+        <div class="hidden lg:flex border border-white/20 bg-white/10 rounded-xl p-8 gap-x-4">
             <div class="w-2/3 h-full">
                 <p class="text-white text-2xl text-left py-2">Amirhossein77</p>
                 <p dir="ltr" class="flex">
@@ -320,13 +334,13 @@ $inPage = true;
         </div>
     </div>
     <div class="border border-white/30 mt-20 rounded-3xl" style="background: linear-gradient(90deg, #A50E86 0.16%, #C10B70 24.02%, #E83947 38.73%, #DF330D 55.88%, #C55212 81.05%, #D37506 100%);">
-        <p class="mt-16 text-white text-4xl bold text-center">عضویت در خبرنامه</p>
-        <p class="mt-8 text-white text-xl light text-center">به جامعه Art Token بپیوندید تا در جریان آخرین اخبار، ویژگی‌ها و نکات مربوط به این بازار قرار بگیرید.</p>
+        <p class="mt-16 text-white text-3xl lg:text-4xl bold text-center">عضویت در خبرنامه</p>
+        <p class="mt-8 text-white text-lg light text-center px-4">به جامعه Art Token بپیوندید تا در جریان آخرین اخبار، ویژگی‌ها و نکات مربوط به این بازار قرار بگیرید.</p>
         <form>
-            <div class="flex max-w-[36rem] h-16 mx-auto mt-16 mb-14">
+            <div class="flex max-w-80 lg:max-w-[36rem] h-16 mx-auto mt-16 mb-14">
                 <div class="relative w-full">
                     <input type="search" id="search-dropdown" class="block p-2.5 pr-4 w-full h-full z-20 text-xl text-gray-900 bg-white rounded-3xl" placeholder="ایمیل خود را وارد کنید" required />
-                    <button type="submit" class="absolute top-0 end-0 p-2.5 w-36 h-full bg-black rounded-l-3xl text-center text-white text-2xl bold">ارسال</button>
+                    <button type="submit" class="absolute top-0 end-0 p-2.5 w-24 lg:w-36 h-full bg-black rounded-l-3xl text-center text-white text-2xl bold">ارسال</button>
                 </div>
             </div>
         </form>

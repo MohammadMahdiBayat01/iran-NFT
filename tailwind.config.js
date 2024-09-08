@@ -2,6 +2,9 @@ module.exports = {
     purge: [
         'public/**/*.php'
     ],
+    content : [
+      './node_modules/flowbite/**/*.js'
+    ],
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily : {
@@ -18,5 +21,7 @@ module.exports = {
         },
     },
     variants: {},
-    plugins: [],
+    plugins: [
+        require('flowbite/plugin')
+    ],
 }
